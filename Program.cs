@@ -32,6 +32,9 @@ while (await timer.WaitForNextTickAsync())
     }
 }
 
+//Makes sure that the log file doesn't delete himself
+StreamWriter w = new StreamWriter(logfilepath + "log.txt", true);
+
 Console.ReadLine();
 
 static void CopyFolderContents(string sourceFolder, string destinationFolder, string mask, Boolean createFolders, Boolean recurseFolders, string logfilepath)
