@@ -7,7 +7,7 @@ string copypath = Console.ReadLine();
 Console.Write("Put the directory you want the copy file to go:");
 string copiedpath = Console.ReadLine();
 
-Console.Write(@"Put the directory you want the log file to go(please pu the \ at the end):");
+Console.Write(@"Put the directory you want the log file to go(please put the \ at the end):");
 string logfilepath = Console.ReadLine();
 
 Console.Write("How many seconds do you want the synchronization to happen:");
