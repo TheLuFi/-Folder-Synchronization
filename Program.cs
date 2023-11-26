@@ -7,14 +7,14 @@ string logfilepath = "";
 
 do
 {
-    Console.Write("Put the directory you want to copy:");
+    Console.Write("Write the directory you want to synchronize:");
     copypath = Console.ReadLine();
 } 
 while (!Directory.Exists(copypath));
 
 do
 {
-    Console.Write("Put the directory you want the copy file to go:");
+    Console.Write("Write the directory you want the log file to go(please put the \ at the end):");
     copiedpath = Console.ReadLine();
 } 
 while (!Directory.Exists(copiedpath));
