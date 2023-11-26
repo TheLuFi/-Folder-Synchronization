@@ -4,13 +4,13 @@ using System.Diagnostics;
 Console.Write("Write the directory you want to synchronize:");
 string copypath = Console.ReadLine();
 
-Console.Write("Write the destination directory:");
+Console.Write("Write the destination you want directory:");
 string copiedpath = Console.ReadLine();
 
 Console.Write(@"Write the directory you want the log file to go(please put the \ at the end):");
 string logfilepath = Console.ReadLine();
 
-Console.Write("Write the Synchronization interval(in seconds):");
+Console.Write("Write the Synchronization intervalyou want (in seconds):");
 int intervalseconds = Convert.ToInt32(Console.ReadLine());
 
 var timer = new PeriodicTimer(TimeSpan.FromSeconds(intervalseconds));
