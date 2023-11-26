@@ -129,8 +129,7 @@ static void DeleteAll(DirectoryInfo source, DirectoryInfo target, string logfile
 
 static void Log(string logMessage, TextWriter w)
 {
-    w.Write("\r\nLog Entry : ");
-    w.WriteLine($" {DateTime.Now:yyyy/MM/dd HH:mm:ss.fff} {logMessage}");
+    w.WriteLine($"{DateTime.Now:yyyy/MM/dd HH:mm:ss.fff}: {logMessage}");
 }
 
 static void DumpLog(StreamReader r)
