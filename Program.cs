@@ -1,16 +1,16 @@
 ﻿
 using System.Diagnostics;
 
-Console.Write("Put the directory you want to copy:");
+Console.Write("Write the directory you want to synchronize:");
 string copypath = Console.ReadLine();
 
-Console.Write("Put the directory you want the copy file to go:");
+Console.Write("Write the destination directory:");
 string copiedpath = Console.ReadLine();
 
-Console.Write(@"Put the directory you want the log file to go(please put the \ at the end):");
+Console.Write(@"Write the directory you want the log file to go(please put the \ at the end):");
 string logfilepath = Console.ReadLine();
 
-Console.Write("How many seconds do you want the synchronization to happen:");
+Console.Write("Write the Synchronization interval(in seconds):");
 int intervalseconds = Convert.ToInt32(Console.ReadLine());
 
 var timer = new PeriodicTimer(TimeSpan.FromSeconds(intervalseconds));
